@@ -11,4 +11,4 @@ jobs:
         - name: multiple script
           run: |
             node -v
-            nmp -v
+            npm -v
