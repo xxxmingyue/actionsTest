@@ -19,6 +19,7 @@ jobs:
           shell: python
     run-windows-powershell:
       runs-on: windows-latest
+      needs: ["run-shell-commands"] # 在数组中的任务完成后才执行
       steps:
         - name: directory run-windows-powershell
           run: Get-Location
